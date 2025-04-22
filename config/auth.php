@@ -40,6 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        // Add or update this 'api' guard entry for JWT authentication
+        'api' => [
+            'driver' => 'jwt', // Use the 'jwt' driver for this guard
+            'provider' => 'users', // Use the 'users' provider to fetch users
+        ],
     ],
 
     /*
